@@ -1,6 +1,6 @@
-# Siasky.net website
+# Skynet Labs Skynet Portals Shutdown Landing Page
 
-This is the code that is deployed on siasky.net domain.
+This is the code that is deployed on siasky.net, skynetfree.net and skynetpro.net domains.
 
 ## Available Scripts
 

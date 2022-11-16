@@ -1,14 +1,19 @@
+const hostname = window?.location?.hostname ?? "";
+const domain = hostname.substring(
+  hostname.lastIndexOf(".", hostname.lastIndexOf(".") - 1) + 1
+);
+
 function App() {
   return (
     <div className="px-8 py-12 desktop:py-24">
       <div className="mx-auto max-w-content">
         <div className="text-left">
-          <h2 className="text-xs uppercase my-3">Siasky.net Customer Notice</h2>
+          <h2 className="text-xs uppercase my-3">{domain} Customer Notice</h2>
           <h1 className="text-3xl desktop:text-4xl font-semibold">
-            Siasky.net is Now Offline
+            {domain} is now offline
           </h1>
 
-          <p className="mt-6 text-palette-500">
+          <p className="mt-6 text-palette-500 pb-10 border-b border-gray-300">
             Due to{" "}
             <a
               href="https://skynetlabs.com/news/skynet-labs-shutting-down-skynet-remains-online/"
@@ -17,38 +22,40 @@ function App() {
             >
               the closure of Skynet Labs
             </a>
-            , the{" "}
-            <a href="https://siasky.net" className="text-primary">
-              siasky.net
-            </a>{" "}
-            portal will no longer provide access to any content on Skynet.
+            , the {domain} portal will no longer provide access to any content
+            on Skynet.
           </p>
 
           <div className="mt-10 space-y-2">
-            <h3 className="text-2xl font-bold">
-              Can I use Skynet with an account?
-            </h3>
+            <h3 className="text-2xl font-bold">Can I still use Skynet?</h3>
             <p>
-              Go to{" "}
-              <a href="https://skynetfree.net" className="text-primary">
-                skynetfree.net
-              </a>{" "}
-              to create a free account, or access your paid account by visiting{" "}
-              <a href="https://skynetpro.net" className="text-primary">
-                skynetpro.net
-              </a>
-              .
+              Yes! While Skynet Labs Skynet portals have been shut down, Skynet
+              network is still accessible through any other active Skynet
+              portal.
             </p>
           </div>
 
-          <div className="mt-6 space-y-2">
-            <h3 className="text-2xl font-semibold">
-              Will my data uploaded to siasky.net be lost?
+          <div className="mt-10 space-y-2">
+            <h3 className="text-2xl font-bold">
+              What other Skynet portals are operating?
+            </h3>
+            <p>
+              Go to{" "}
+              <a href="https://web3portal.com" className="text-primary">
+                web3portal.com
+              </a>{" "}
+              and create a free account to access all of Skynet content.
+            </p>
+          </div>
+
+          <div className="mt-10 space-y-2">
+            <h3 className="text-2xl font-bold">
+              Will my data uploaded to {domain} be lost?
             </h3>
             <p>
               If files are not re-uploaded or re-pinned to Skynet using another
-              portal, any file uploaded to siasky.net will eventually drop off
-              the network.
+              portal, any file uploaded to {domain} will eventually drop off the
+              network.
             </p>
           </div>
 
